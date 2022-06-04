@@ -14,3 +14,7 @@
 const total = 100;
 const ordered = 50;
 ```*/
+
+const total = 100;
+const ordered = 50;
+
