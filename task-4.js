@@ -22,3 +22,11 @@
 
 const credits = `23500`;
 const pricePerDroid = `3000`;
+
+let message = prompt('какое количество дроидов вы хотите купить???');
+console.log(message);
+
+if(message === null){
+  console.log('Отменено пользователем!');
+}
+
