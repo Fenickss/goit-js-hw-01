@@ -20,13 +20,23 @@
     `'Вы купили [число] дроидов, на счету осталось [число] кредитов.'`.
 */
 
-const credits = `23500`;
-const pricePerDroid = `3000`;
+const credits = "23500";
+const pricePerDroid = "3000";
 
-let message = prompt('какое количество дроидов вы хотите купить???');
-console.log(message);
+const message = prompt("какое количество дроидов вы хотите купить???");
+let totalPrice = message * pricePerDroid;
 
-if(message === null){
-  console.log('Отменено пользователем!');
+if (message === null) {
+  console.log("Отменено пользователем!");
+} else {
+  console.log(totalPrice);
 }
 
+if (totalPrice > "23500") {
+  console.log("Недостаточно средств на счету!");
+} else if (totalPrice) {
+  let accountBalance = credits - totalPrice;
+  console.log(
+    `Вы купили ${message} дроидов, на счету осталось ${accountBalance} кредитов.`
+  );
+}
