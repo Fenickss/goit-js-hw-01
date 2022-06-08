@@ -19,3 +19,11 @@
 let input;
 let total = 0;
 ```*/
+
+let input = prompt('Пожалуйста введите число');
+let total = 0;
+ total = input + total;
+
+console.log(total);
+
+for(let total = 0; )
