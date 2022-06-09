@@ -39,19 +39,15 @@ if (input !== 0) {
  */
 
 let total = 0;
-let input = Number(prompt());
-while(input){
-	total += input;
-	input = Number(prompt());
+let input = Number(prompt("Введите число!!!"));
+while (input) {
+  total += input;
+  input = Number(prompt());
   console.log(total);
 
   input = Number(input);
 }
- if (Number.isNaN(input)) {
-    alert("Было введено не число,попробуйте еще раз");
-    
-  }
+if (Number.isNaN(input)) {
+  alert("Было введено не число,попробуйте еще раз");
+}
 alert(`Общая сумма чисел равна ${total}`);
-
-
-
