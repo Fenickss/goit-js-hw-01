@@ -44,7 +44,13 @@ while(input){
 	total += input;
 	input = Number(prompt());
   console.log(total);
-};
+
+  input = Number(input);
+}
+ if (Number.isNaN(input)) {
+    alert("Было введено не число,попробуйте еще раз");
+    
+  }
 alert(`Общая сумма чисел равна ${total}`);
 
 
