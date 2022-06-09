@@ -20,10 +20,32 @@ let input;
 let total = 0;
 ```*/
 
-let input = prompt('Пожалуйста введите число');
+/* let input; 
 let total = 0;
  total = input + total;
+if (input !== 0) {
+  
+  for (let i = 0; i < 10; i += 1) {
+    
+   
+    console.log(total);
+  }
 
-console.log(total);
+  
+}else if(input === 0) {
+  alert(`Общая сумма чисел равна ${total}`);
+  console.log(null);
+}
+ */
 
-for(let total = 0; )
+let total = 0;
+let input = Number(prompt());
+while(input){
+	total += input;
+	input = Number(prompt());
+  console.log(total);
+};
+alert(`Общая сумма чисел равна ${total}`);
+
+
+
